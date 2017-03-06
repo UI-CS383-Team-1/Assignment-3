@@ -69,4 +69,7 @@ public:
     // Return a count of the number of nodes in the list.
 
    int Size();
+
+   //Prints the list.
+   void Print();
 };
