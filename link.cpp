@@ -73,7 +73,7 @@ int LinkedList::IsInList(int x)
 {
     nodeptr p = start;
 
-    while (p != NULL){
+   // while (p != NULL){
 
     while (p != NULL){
         if(p->info == x) return 1;
@@ -89,3 +89,16 @@ int LinkedList::Size()
 {
     return count;
 }
+
+void LinkedList::Print()
+{
+   nodeptr p = start;
+
+   while( p != NULL)
+   {
+        cout << p->info <<endl;
+        p = p->next;
+   }
+}
+
+
