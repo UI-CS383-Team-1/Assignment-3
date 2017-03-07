@@ -48,28 +48,31 @@ public:
       }
    }
 
-   //Adds node to the front of list
+   // Adds node to the front of list
    void AddNode(int x);
 
-   //Deletes the first node
+   // Deletes the first node
    void DeleteNode();
 
-   //Returns info of the first node on the list
+   // Returns info of the first node on the list
    int InfoAtTop();
 
-    // Output the values in the nodes, one integer per line.
-
+   // Output the values in the nodes, one integer per line.
    void ListNodes();
 
-    // Return 1 if there in a node in the list with the value x.
-    // Return 0 if there is NOT a node in the list with the value x.
-
+   // Return 1 if there in a node in the list with the value x.
+   // Return 0 if there is NOT a node in the list with the value x.
    int IsInList(int x);
+  
+   // Returns Average (simple mean) of List
+   double Average();
+   
+   // Returns Standard Deviation of List
+   double StandardDeviation();
 
-    // Return a count of the number of nodes in the list.
-
+   // Return a count of the number of nodes in the list.
    int Size();
 
-   //Prints the list.
+   // Prints the list.
    void Print();
 };

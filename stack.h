@@ -1,8 +1,8 @@
 /*stack.h
 */
 
-#include<iostream>
-#include"link.h"
+#include <iostream>
+#include "link.h"
 
 class Stack{
 

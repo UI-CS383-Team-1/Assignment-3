@@ -10,6 +10,7 @@
 using namespace std;
 
 #include "link.h"
+#include "math.h"
 
 
 
@@ -83,6 +84,41 @@ int LinkedList::IsInList(int x)
     return 0;
     //return (int)(x == p->info);
 }
+
+double LinkedList::Average(){
+      int sum = 0;
+      double mean = 0;
+      nodeptr p = start;
+      while(p != NULL){
+        sum += p->info;
+        p = p->next;
+      }
+    return mean = sum / count;
+  }
+
+double LinkedList::StandardDeviation(){
+  int sum = 0;
+  double std_dev = 0;
+  double mean = 0;
+  
+  // Find Mean
+    nodeptr p = start;
+    while(p != NULL){
+      sum += p->info;
+      p = p->next;
+    }
+    mean = sum / count;
+
+  // Square distance to mean
+    sum = 0;
+    p = start;
+    while(p != NULL){
+      sum += ((p->info - mean) * (p->info - mean));
+      p = p->next;
+    }
+  // divide by number of nodes and get square root
+    return std_dev = sqrt((sum/count));
+} 
 
 
 int LinkedList::Size()
