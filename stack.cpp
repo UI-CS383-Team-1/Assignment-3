@@ -1,5 +1,5 @@
-#include<iostream>
-#include"stack.h"
+#include <iostream>
+#include "stack.h"
 
 Stack::Stack()
 {

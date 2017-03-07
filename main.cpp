@@ -27,18 +27,21 @@ int main() {
   list1.AddNode(1);
   list1.AddNode(4);
   
-  cout << "Contents of list1 after adding:" << end;
+  cout << "Contents of list1 after adding:" << endl;
   list1.ListNodes();
   
   //Delete a node
   list1.DeleteNode();
   cout << "Deleted" << endl;
   
-  cout << "Contents of list1 after deleting:" << end;
+  cout << "Contents of list1 after deleting:" << endl;
   list1.ListNodes();
   
   int info = list1.InfoAtTop();
   cout << "Top node: " << info << endl;
+
+  cout << "list1 Average: " << list1.Average() << endl;
+  cout << "list1 Standard Deviation: " << list1.StandardDeviation() << endl;  
 
   return 0;
 
