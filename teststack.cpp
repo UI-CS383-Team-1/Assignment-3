@@ -18,6 +18,9 @@ int main()
    cout << "Contents of iStack" << endl;
    iStack.Print();          // output the stack contents
 
+   iStack.Reverse();
+   cout << "Contents of iStack after reverse"<< endl;
+   iStack.Print();
 
    cout << endl << "Popping integers from iStack" << endl;
 

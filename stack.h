@@ -12,6 +12,8 @@ class Stack{
     int Pop();
     void Print();
     int IsEmpty();
+    void Reverse();
+    void insertAtBottom(int item);
  private:
     LinkedList topPtr;
 

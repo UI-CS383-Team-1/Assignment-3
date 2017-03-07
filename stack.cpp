@@ -35,3 +35,31 @@ void Stack::Print()
 {
    topPtr.Print();
 }
+
+void Stack::Reverse()
+{
+    if(IsEmpty())
+	return;
+    else
+    {
+	int x;
+	x = Pop();
+	Reverse();
+	insertAtBottom(x);
+
+    }
+}
+
+void Stack::insertAtBottom(int item)
+{
+    if(IsEmpty())
+	Push(item);
+    else
+    {
+	int x;
+	x=Pop();
+	insertAtBottom(item);
+	Push(x);
+
+    }
+}
